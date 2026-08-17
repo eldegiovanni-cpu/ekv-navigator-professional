@@ -1,0 +1,34 @@
+{
+  "name": "ekv-navigator-developer-architecture",
+  "version": "3.0.0",
+  "private": true,
+  "description": "EKV Navigator Developer Architecture 3.0 Final – zertifizierte Frontend/Backend Wartungsbasis",
+  "scripts": {
+    "build": "python scripts/build.py",
+    "test:integrity": "node --test tests/build_integrity.test.js tests/commercial_packaging_integrity.test.js tests/phase3_architecture.test.js tests/phase4_ui.test.js tests/phase5_workspace.test.js",
+    "test:domain": "node --test tests/domain/*.test.js",
+    "test:browser": "python tests/browser/reference_parity.py && python tests/browser/bfs_raw_reconciliation_smoke.py && python tests/browser/phase4_ui_smoke.py && python tests/browser/phase5_workspace_smoke.py && python tests/browser/commercial_release_smoke.py && python tests/browser/phase_b_alpha4_export_smoke.py && python tests/browser/phase_b_alpha5_ui_smoke.py && python tests/browser/phase_b_alpha6_design_system_smoke.py && python tests/browser/phase_b_alpha7_feature_api_smoke.py && python tests/browser/final_data_inspector_smoke.py && python tests/browser/phase_d_alpha4_review_tool_smoke.py && python tests/browser/commercial_portable_smoke.py",
+    "test": "npm run build && npm run core:certification-report && npm run core:review-pack && npm run test:governance && npm run test:golden && npm run test:architecture3 && npm run test:phasec && npm run test:integrity && npm run test:domain && npm run test:release",
+    "test:all": "npm run test && npm run test:browser",
+    "test:release": "node --test tests/release_final.test.js tests/final_candidate_release.test.js",
+    "data:audit": "node scripts/data_audit.js",
+    "test:architecture3": "node --test tests/developer_architecture_phase_b.test.js tests/phase_b_alpha2_modularity.test.js tests/phase_b_alpha3_persistence.test.js tests/phase_b_alpha4_export.test.js tests/phase_b_alpha5_ui_decoupling.test.js tests/phase_b_alpha6_design_system.test.js tests/phase_b_alpha7_feature_api.test.js tests/frontend_backend_architecture.test.js",
+    "test:phasec": "node --test tests/phase_c_alpha1_bfs_pipeline.test.js tests/phase_c_alpha2_file_adapters.test.js tests/phase_c_alpha3_profiles_provenance.test.js",
+    "bfs:dry-run": "npm run build && node scripts/bfs_pipeline.js",
+    "bfs:file-dry-run": "npm run build && node scripts/bfs_file_import.js",
+    "bfs:release-manifest": "npm run build && node scripts/bfs_release_manifest.js",
+    "test:governance": "node --test tests/phase_d_alpha1_governance.test.js tests/phase_d_alpha2_approval.test.js tests/phase_d_alpha3_certification.test.js tests/phase_d_alpha4_review_workflow.test.js tests/rc1_certified_governance.test.js",
+    "test:golden": "node --test tests/golden/golden_cases.test.js",
+    "candidate:gate": "node scripts/candidate_gate.js",
+    "golden:approval-check": "node scripts/golden_approval_check.js",
+    "core:certification-report": "node scripts/core_case_certification.js",
+    "core:certification-status": "node scripts/core_certification_check.js",
+    "core:certification-release-gate": "node scripts/core_certification_check.js --require-all-approved",
+    "core:review-pack": "node scripts/core_review_pack.js",
+    "core:review-bundle-check": "node scripts/core_review_bundle.js",
+    "core:review-bundle-import": "node scripts/core_review_bundle.js --write"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

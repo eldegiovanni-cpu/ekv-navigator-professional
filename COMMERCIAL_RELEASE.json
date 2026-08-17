@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "product": "EKV Navigator Professional",
+  "commercial_version": "1.0 Commercial Final Master",
+  "reference_app_version": "2.1.0",
+  "architecture_version": "3.0.0",
+  "release_date": "2026-08-17",
+  "release_status": "COMMERCIAL_FINAL_MASTER_SALES_READY",
+  "license_id": "EKVP-1-FINAL-MASTER-2026",
+  "runtime": "offline portable",
+  "feature_freeze": true,
+  "frontend_packaging": "complete dist with assets",
+  "data_release": {
+    "reconciliation": "BFS raw reconciliation 2026-08-17",
+    "lse_latest": "2024",
+    "nle_latest": "2025",
+    "bua_latest": "2025",
+    "quality_markers": "-, *, [ ] resolved with documented fallback hierarchy"
+  },
+  "quality_baseline": {
+    "core_cases_technical": "24/24",
+    "core_cases_human_certified": "24/24",
+    "node_tests_rc1_3": "288 passed",
+    "browser_checks_rc1_3": "12/12 passed",
+    "data_audit": "passed without unresolved mappings or collisions",
+    "node_tests_final_candidate": "289 passed",
+    "browser_checks_final_candidate": "12/12 passed"
+  },
+  "commercial_sale_gates": {
+    "bfs_commercial_use_permissions": "CONFIRMED_WITH_SOURCE_ATTRIBUTION",
+    "provider_legal_identity": "CONFIRMED_UID_PENDING_FIRST_SALE",
+    "provider_rights_employer_clearance": "CONFIRMED",
+    "final_licence_contract_legal_review": "DEFERRED_UNTIL_FIRST_CONCRETE_INTEREST",
+    "customer_personalization": "REQUIRED_BEFORE_CUSTOMER_DELIVERY"
+  },
+  "provider": {
+    "name": "De Giovanni InvaTech",
+    "address": "Marktstrasse 2, 8853 Lachen SZ, Schweiz",
+    "uid_che": "PENDING_FIRST_SALE"
+  }
+}

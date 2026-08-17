@@ -1,0 +1,1802 @@
+{
+  "schemaVersion": 1,
+  "suiteId": "ekv-golden-cases-2.1-baseline",
+  "locked": true,
+  "reference": {
+    "appVersion": "2.1.0",
+    "referenceFile": "EKV_Navigator_IV(1).html",
+    "referenceSha256": "d876f0ad37efbfc4116cbae80738ba3df3189df77a28bb635a7e25a495d64e03"
+  },
+  "purpose": "Fester fachlicher Regressionsbestand fuer kontrollierte Entwickler- und KI-Aenderungen. Erwartungswerte duerfen nur nach expliziter fachlicher Freigabe angepasst werden.",
+  "caseCount": 78,
+  "cases": [
+    {
+      "id": "INV-2024-060",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2024
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.6,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 43200,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Pauschalabzug 10 Prozent | Kein Teilzeitabzug"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2024-050",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2024
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.5,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 32000,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Teilzeitabzug 10 Prozent",
+        "deductionNote": "Pauschalabzug 10 Prozent | Teilzeitabzug 10 Prozent"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2024-040",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2024
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.4,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 25600,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Teilzeitabzug 10 Prozent",
+        "deductionNote": "Pauschalabzug 10 Prozent | Teilzeitabzug 10 Prozent"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2024-051",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2024
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.51,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 36720,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Pauschalabzug 10 Prozent | Kein Teilzeitabzug"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2024-001",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2024
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.01,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 720,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Pauschalabzug 10 Prozent | Kein Teilzeitabzug"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2024-0011",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2024
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.011,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 704,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Teilzeitabzug 10 Prozent",
+        "deductionNote": "Pauschalabzug 10 Prozent | Teilzeitabzug 10 Prozent"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2023-050",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2023
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.5,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 36000,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Teilzeitabzug 10 Prozent",
+        "deductionNote": "Teilzeitabzug 10 Prozent"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2023-051",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2023
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.51,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 40800,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Kein Pauschalabzug"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2022-040",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2022
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.4,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 28800,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Teilzeitabzug 10 Prozent",
+        "deductionNote": "Teilzeitabzug 10 Prozent"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2021-050-L20",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2021
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.5,
+          "leidens": 0.2
+        }
+      },
+      "expected": {
+        "finalValue": 32000,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Leidensbedingter Abzug 20%"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2024-BS-050-L20",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2024
+        },
+        "options": {
+          "besitzstand": "Ja",
+          "restAf": 0.5,
+          "leidens": 0.2
+        }
+      },
+      "expected": {
+        "finalValue": 32000,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Leidensbedingter Abzug 20%"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2025-BS-075-L10",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2025
+        },
+        "options": {
+          "besitzstand": "Ja",
+          "restAf": 0.75,
+          "leidens": 0.1
+        }
+      },
+      "expected": {
+        "finalValue": 54000,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Leidensbedingter Abzug 10%"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2025-075-L20-IGNORED",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2025
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.75,
+          "leidens": 0.2
+        }
+      },
+      "expected": {
+        "finalValue": 54000,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Pauschalabzug 10 Prozent | Kein Teilzeitabzug"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2020-080",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2020
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.8,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 64000,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Kein Pauschalabzug"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2019-050-L25",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2019
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.5,
+          "leidens": 0.25
+        }
+      },
+      "expected": {
+        "finalValue": 30000,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Leidensbedingter Abzug 25%"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2022-BS-050-L10",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2022
+        },
+        "options": {
+          "besitzstand": "Ja",
+          "restAf": 0.5,
+          "leidens": 0.1
+        }
+      },
+      "expected": {
+        "finalValue": 36000,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Leidensbedingter Abzug 10%"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2023-030-L25",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2023
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.3,
+          "leidens": 0.25
+        }
+      },
+      "expected": {
+        "finalValue": 18000,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Teilzeitabzug 10 Prozent",
+        "deductionNote": "Leidensbedingter Abzug 25%"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2023-030",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2023
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.3,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 21600,
+        "pauschalLabel": "Kein Pauschalabzug",
+        "teilzeitLabel": "Teilzeitabzug 10 Prozent",
+        "deductionNote": "Teilzeitabzug 10 Prozent"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2024-100",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000,
+          "year": 2024
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 1,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 72000,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Kein Teilzeitabzug",
+        "deductionNote": "Pauschalabzug 10 Prozent | Kein Teilzeitabzug"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "INV-2025-025",
+      "group": "invalid-statistical",
+      "operation": "calculateInvalidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 100000,
+          "year": 2025
+        },
+        "options": {
+          "besitzstand": "Nein",
+          "restAf": 0.25,
+          "leidens": 0
+        }
+      },
+      "expected": {
+        "finalValue": 20000,
+        "pauschalLabel": "Pauschalabzug 10 Prozent",
+        "teilzeitLabel": "Teilzeitabzug 10 Prozent",
+        "deductionNote": "Pauschalabzug 10 Prozent | Teilzeitabzug 10 Prozent"
+      },
+      "tags": [
+        "IVE",
+        "Abzug"
+      ]
+    },
+    {
+      "id": "VAL-NONE",
+      "group": "valid-statistical",
+      "operation": "calculateValidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000
+        },
+        "parallelIncome": null
+      },
+      "expected": {
+        "finalValue": 80000,
+        "parallelText": "Nicht geprüft",
+        "transferNote": "Beim Valideneinkommen werden keine Abzüge berücksichtigt."
+      },
+      "tags": [
+        "VE",
+        "Parallelisierung"
+      ]
+    },
+    {
+      "id": "VAL-70000",
+      "group": "valid-statistical",
+      "operation": "calculateValidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000
+        },
+        "parallelIncome": 70000
+      },
+      "expected": {
+        "finalValue": 76000,
+        "parallelText": "Parallelisierung angezeigt: CHF 76’000.00",
+        "transferNote": "Der parallelisierte Wert wurde übernommen, weil das AHV Einkommen unter 95 Prozent des statistischen Werts liegt."
+      },
+      "tags": [
+        "VE",
+        "Parallelisierung"
+      ]
+    },
+    {
+      "id": "VAL-75999",
+      "group": "valid-statistical",
+      "operation": "calculateValidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000
+        },
+        "parallelIncome": 75999
+      },
+      "expected": {
+        "finalValue": 76000,
+        "parallelText": "Parallelisierung angezeigt: CHF 76’000.00",
+        "transferNote": "Der parallelisierte Wert wurde übernommen, weil das AHV Einkommen unter 95 Prozent des statistischen Werts liegt."
+      },
+      "tags": [
+        "VE",
+        "Parallelisierung"
+      ]
+    },
+    {
+      "id": "VAL-76000",
+      "group": "valid-statistical",
+      "operation": "calculateValidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000
+        },
+        "parallelIncome": 76000
+      },
+      "expected": {
+        "finalValue": 80000,
+        "parallelText": "Nicht angezeigt",
+        "transferNote": "Beim Valideneinkommen werden keine Abzüge berücksichtigt."
+      },
+      "tags": [
+        "VE",
+        "Parallelisierung"
+      ]
+    },
+    {
+      "id": "VAL-79000",
+      "group": "valid-statistical",
+      "operation": "calculateValidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000
+        },
+        "parallelIncome": 79000
+      },
+      "expected": {
+        "finalValue": 80000,
+        "parallelText": "Nicht angezeigt",
+        "transferNote": "Beim Valideneinkommen werden keine Abzüge berücksichtigt."
+      },
+      "tags": [
+        "VE",
+        "Parallelisierung"
+      ]
+    },
+    {
+      "id": "VAL-90000",
+      "group": "valid-statistical",
+      "operation": "calculateValidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 80000
+        },
+        "parallelIncome": 90000
+      },
+      "expected": {
+        "finalValue": 80000,
+        "parallelText": "Nicht angezeigt",
+        "transferNote": "Beim Valideneinkommen werden keine Abzüge berücksichtigt."
+      },
+      "tags": [
+        "VE",
+        "Parallelisierung"
+      ]
+    },
+    {
+      "id": "VAL-100K-90K",
+      "group": "valid-statistical",
+      "operation": "calculateValidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 100000
+        },
+        "parallelIncome": 90000
+      },
+      "expected": {
+        "finalValue": 95000,
+        "parallelText": "Parallelisierung angezeigt: CHF 95’000.00",
+        "transferNote": "Der parallelisierte Wert wurde übernommen, weil das AHV Einkommen unter 95 Prozent des statistischen Werts liegt."
+      },
+      "tags": [
+        "VE",
+        "Parallelisierung"
+      ]
+    },
+    {
+      "id": "VAL-100K-95K",
+      "group": "valid-statistical",
+      "operation": "calculateValidStatisticalIncome",
+      "input": {
+        "base": {
+          "annual": 100000
+        },
+        "parallelIncome": 95000
+      },
+      "expected": {
+        "finalValue": 100000,
+        "parallelText": "Nicht angezeigt",
+        "transferNote": "Beim Valideneinkommen werden keine Abzüge berücksichtigt."
+      },
+      "tags": [
+        "VE",
+        "Parallelisierung"
+      ]
+    },
+    {
+      "id": "EKV-80-40",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 80000,
+        "invalidIncome": 40000
+      },
+      "expected": {
+        "valid": 80000,
+        "invalid": 40000,
+        "rawLoss": 40000,
+        "loss": 40000,
+        "grade": 0.5,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-80-0",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 80000,
+        "invalidIncome": 0
+      },
+      "expected": {
+        "valid": 80000,
+        "invalid": 0,
+        "rawLoss": 80000,
+        "loss": 80000,
+        "grade": 1,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-80-80",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 80000,
+        "invalidIncome": 80000
+      },
+      "expected": {
+        "valid": 80000,
+        "invalid": 80000,
+        "rawLoss": 0,
+        "loss": 0,
+        "grade": 0,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-80-90",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 80000,
+        "invalidIncome": 90000
+      },
+      "expected": {
+        "valid": 80000,
+        "invalid": 90000,
+        "rawLoss": -10000,
+        "loss": 0,
+        "grade": 0,
+        "noAcquisitionLoss": true
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-100-60",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 100000,
+        "invalidIncome": 60000
+      },
+      "expected": {
+        "valid": 100000,
+        "invalid": 60000,
+        "rawLoss": 40000,
+        "loss": 40000,
+        "grade": 0.4,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-100-59500",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 100000,
+        "invalidIncome": 59500
+      },
+      "expected": {
+        "valid": 100000,
+        "invalid": 59500,
+        "rawLoss": 40500,
+        "loss": 40500,
+        "grade": 0.41,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-70-35",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 70000,
+        "invalidIncome": 35000
+      },
+      "expected": {
+        "valid": 70000,
+        "invalid": 35000,
+        "rawLoss": 35000,
+        "loss": 35000,
+        "grade": 0.5,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-0-0",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 0,
+        "invalidIncome": 0
+      },
+      "expected": {
+        "valid": 0,
+        "invalid": 0,
+        "rawLoss": 0,
+        "loss": 0,
+        "grade": 0,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-0-10",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 0,
+        "invalidIncome": 10000
+      },
+      "expected": {
+        "valid": 0,
+        "invalid": 10000,
+        "rawLoss": 0,
+        "loss": 0,
+        "grade": 0,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-100K-66666",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 100000,
+        "invalidIncome": 66666
+      },
+      "expected": {
+        "valid": 100000,
+        "invalid": 66666,
+        "rawLoss": 33334,
+        "loss": 33334,
+        "grade": 0.33,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-100K-66500",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 100000,
+        "invalidIncome": 66500
+      },
+      "expected": {
+        "valid": 100000,
+        "invalid": 66500,
+        "rawLoss": 33500,
+        "loss": 33500,
+        "grade": 0.34,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "EKV-120K-30K",
+      "group": "income-comparison",
+      "operation": "calculateEkvComparison",
+      "input": {
+        "validIncome": 120000,
+        "invalidIncome": 30000
+      },
+      "expected": {
+        "valid": 120000,
+        "invalid": 30000,
+        "rawLoss": 90000,
+        "loss": 90000,
+        "grade": 0.75,
+        "noAcquisitionLoss": false
+      },
+      "tags": [
+        "EKV"
+      ]
+    },
+    {
+      "id": "MIX-50-60-40-30",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0.5,
+        "employmentShare": 0.6,
+        "householdShare": 0.4,
+        "householdLimitation": 0.3
+      },
+      "expected": {
+        "weightedEmployment": 0.3,
+        "weightedHousehold": 0.12,
+        "finalGrade": 0.42
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-40-80-20-25",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0.4,
+        "employmentShare": 0.8,
+        "householdShare": 0.2,
+        "householdLimitation": 0.25
+      },
+      "expected": {
+        "weightedEmployment": 0.32000000000000006,
+        "weightedHousehold": 0.05,
+        "finalGrade": 0.37000000000000005
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-70-50-50-20",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0.7,
+        "employmentShare": 0.5,
+        "householdShare": 0.5,
+        "householdLimitation": 0.2
+      },
+      "expected": {
+        "weightedEmployment": 0.35,
+        "weightedHousehold": 0.1,
+        "finalGrade": 0.44999999999999996
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-0-60-40-50",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0,
+        "employmentShare": 0.6,
+        "householdShare": 0.4,
+        "householdLimitation": 0.5
+      },
+      "expected": {
+        "weightedEmployment": 0,
+        "weightedHousehold": 0.2,
+        "finalGrade": 0.2
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-100-50-50-0",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 1,
+        "employmentShare": 0.5,
+        "householdShare": 0.5,
+        "householdLimitation": 0
+      },
+      "expected": {
+        "weightedEmployment": 0.5,
+        "weightedHousehold": 0,
+        "finalGrade": 0.5
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-25-70-30-60",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0.25,
+        "employmentShare": 0.7,
+        "householdShare": 0.3,
+        "householdLimitation": 0.6
+      },
+      "expected": {
+        "weightedEmployment": 0.175,
+        "weightedHousehold": 0.18,
+        "finalGrade": 0.355
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-33-75-25-40",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0.33,
+        "employmentShare": 0.75,
+        "householdShare": 0.25,
+        "householdLimitation": 0.4
+      },
+      "expected": {
+        "weightedEmployment": 0.2475,
+        "weightedHousehold": 0.1,
+        "finalGrade": 0.34750000000000003
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-60-40-60-10",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0.6,
+        "employmentShare": 0.4,
+        "householdShare": 0.6,
+        "householdLimitation": 0.1
+      },
+      "expected": {
+        "weightedEmployment": 0.24,
+        "weightedHousehold": 0.06,
+        "finalGrade": 0.3
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-45-90-10-80",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0.45,
+        "employmentShare": 0.9,
+        "householdShare": 0.1,
+        "householdLimitation": 0.8
+      },
+      "expected": {
+        "weightedEmployment": 0.405,
+        "weightedHousehold": 0.08000000000000002,
+        "finalGrade": 0.48500000000000004
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "MIX-80-20-80-50",
+      "group": "mixed-method",
+      "operation": "calculateMixedMethod",
+      "input": {
+        "employmentGrade": 0.8,
+        "employmentShare": 0.2,
+        "householdShare": 0.8,
+        "householdLimitation": 0.5
+      },
+      "expected": {
+        "weightedEmployment": 0.16000000000000003,
+        "weightedHousehold": 0.4,
+        "finalGrade": 0.56
+      },
+      "tags": [
+        "Gemischte Methode"
+      ]
+    },
+    {
+      "id": "DIR-FULL",
+      "group": "direct-income",
+      "operation": "calculateDirectIncome",
+      "input": {
+        "income": 60000,
+        "kind": "full",
+        "pensum": 0,
+        "indexEnabled": false,
+        "sourceIndex": null,
+        "targetIndex": null
+      },
+      "expected": {
+        "income": 60000,
+        "pensum": 0,
+        "validPensum": true,
+        "baseValue": 60000,
+        "sourceIndex": null,
+        "targetIndex": null,
+        "validIndices": true,
+        "finalValue": 60000,
+        "complete": true
+      },
+      "tags": [
+        "Direktlohn"
+      ]
+    },
+    {
+      "id": "DIR-P50",
+      "group": "direct-income",
+      "operation": "calculateDirectIncome",
+      "input": {
+        "income": 30000,
+        "kind": "partial",
+        "pensum": 50,
+        "indexEnabled": false,
+        "sourceIndex": null,
+        "targetIndex": null
+      },
+      "expected": {
+        "income": 30000,
+        "pensum": 50,
+        "validPensum": true,
+        "baseValue": 60000,
+        "sourceIndex": null,
+        "targetIndex": null,
+        "validIndices": true,
+        "finalValue": 60000,
+        "complete": true
+      },
+      "tags": [
+        "Direktlohn"
+      ]
+    },
+    {
+      "id": "DIR-P80-IDX",
+      "group": "direct-income",
+      "operation": "calculateDirectIncome",
+      "input": {
+        "income": 48000,
+        "kind": "partial",
+        "pensum": 80,
+        "indexEnabled": true,
+        "sourceIndex": 100,
+        "targetIndex": 102
+      },
+      "expected": {
+        "income": 48000,
+        "pensum": 80,
+        "validPensum": true,
+        "baseValue": 60000,
+        "sourceIndex": 100,
+        "targetIndex": 102,
+        "validIndices": true,
+        "finalValue": 61200,
+        "complete": true
+      },
+      "tags": [
+        "Direktlohn"
+      ]
+    },
+    {
+      "id": "DIR-FULL-IDX",
+      "group": "direct-income",
+      "operation": "calculateDirectIncome",
+      "input": {
+        "income": 70000,
+        "kind": "full",
+        "pensum": 0,
+        "indexEnabled": true,
+        "sourceIndex": 105,
+        "targetIndex": 108
+      },
+      "expected": {
+        "income": 70000,
+        "pensum": 0,
+        "validPensum": true,
+        "baseValue": 70000,
+        "sourceIndex": 105,
+        "targetIndex": 108,
+        "validIndices": true,
+        "finalValue": 72000,
+        "complete": true
+      },
+      "tags": [
+        "Direktlohn"
+      ]
+    },
+    {
+      "id": "DIR-P0-INVALID",
+      "group": "direct-income",
+      "operation": "calculateDirectIncome",
+      "input": {
+        "income": 30000,
+        "kind": "partial",
+        "pensum": 0,
+        "indexEnabled": false,
+        "sourceIndex": null,
+        "targetIndex": null
+      },
+      "expected": {
+        "income": 30000,
+        "pensum": 0,
+        "validPensum": false,
+        "baseValue": 0,
+        "sourceIndex": null,
+        "targetIndex": null,
+        "validIndices": true,
+        "finalValue": 0,
+        "complete": false
+      },
+      "tags": [
+        "Direktlohn"
+      ]
+    },
+    {
+      "id": "DIR-IDX-MISSING",
+      "group": "direct-income",
+      "operation": "calculateDirectIncome",
+      "input": {
+        "income": 60000,
+        "kind": "full",
+        "pensum": 0,
+        "indexEnabled": true,
+        "sourceIndex": null,
+        "targetIndex": 108
+      },
+      "expected": {
+        "income": 60000,
+        "pensum": 0,
+        "validPensum": true,
+        "baseValue": 60000,
+        "sourceIndex": null,
+        "targetIndex": 108,
+        "validIndices": false,
+        "finalValue": 0,
+        "complete": false
+      },
+      "tags": [
+        "Direktlohn"
+      ]
+    },
+    {
+      "id": "DIR-P25-IDX",
+      "group": "direct-income",
+      "operation": "calculateDirectIncome",
+      "input": {
+        "income": 20000,
+        "kind": "partial",
+        "pensum": 25,
+        "indexEnabled": true,
+        "sourceIndex": 99.5,
+        "targetIndex": 103.2
+      },
+      "expected": {
+        "income": 20000,
+        "pensum": 25,
+        "validPensum": true,
+        "baseValue": 80000,
+        "sourceIndex": 99.5,
+        "targetIndex": 103.2,
+        "validIndices": true,
+        "finalValue": 82974.8743718593,
+        "complete": true
+      },
+      "tags": [
+        "Direktlohn"
+      ]
+    },
+    {
+      "id": "DIR-FULL-ZERO",
+      "group": "direct-income",
+      "operation": "calculateDirectIncome",
+      "input": {
+        "income": 0,
+        "kind": "full",
+        "pensum": 0,
+        "indexEnabled": false,
+        "sourceIndex": null,
+        "targetIndex": null
+      },
+      "expected": {
+        "income": 0,
+        "pensum": 0,
+        "validPensum": true,
+        "baseValue": 0,
+        "sourceIndex": null,
+        "targetIndex": null,
+        "validIndices": true,
+        "finalValue": 0,
+        "complete": false
+      },
+      "tags": [
+        "Direktlohn"
+      ]
+    },
+    {
+      "id": "ROW-FULL-IDX",
+      "group": "income-row",
+      "operation": "calculateIncomeRow",
+      "input": {
+        "amount": 50000,
+        "kind": "full",
+        "pensum": null,
+        "sourceIndex": 100,
+        "targetIndex": 102
+      },
+      "expected": {
+        "amount": 50000,
+        "pensum": null,
+        "validPensum": true,
+        "fullAmount": 50000,
+        "sourceIndex": 100,
+        "targetIndex": 102,
+        "uprated": 51000,
+        "complete": true
+      },
+      "tags": [
+        "AHV",
+        "Hochrechnung"
+      ]
+    },
+    {
+      "id": "ROW-P50-IDX",
+      "group": "income-row",
+      "operation": "calculateIncomeRow",
+      "input": {
+        "amount": 30000,
+        "kind": "partial",
+        "pensum": 50,
+        "sourceIndex": 100,
+        "targetIndex": 102
+      },
+      "expected": {
+        "amount": 30000,
+        "pensum": 50,
+        "validPensum": true,
+        "fullAmount": 60000,
+        "sourceIndex": 100,
+        "targetIndex": 102,
+        "uprated": 61200,
+        "complete": true
+      },
+      "tags": [
+        "AHV",
+        "Hochrechnung"
+      ]
+    },
+    {
+      "id": "ROW-P80-NOIDX",
+      "group": "income-row",
+      "operation": "calculateIncomeRow",
+      "input": {
+        "amount": 48000,
+        "kind": "partial",
+        "pensum": 80,
+        "sourceIndex": null,
+        "targetIndex": null
+      },
+      "expected": {
+        "amount": 48000,
+        "pensum": 80,
+        "validPensum": true,
+        "fullAmount": 60000,
+        "sourceIndex": null,
+        "targetIndex": null,
+        "uprated": null,
+        "complete": false
+      },
+      "tags": [
+        "AHV",
+        "Hochrechnung"
+      ]
+    },
+    {
+      "id": "ROW-P0",
+      "group": "income-row",
+      "operation": "calculateIncomeRow",
+      "input": {
+        "amount": 30000,
+        "kind": "partial",
+        "pensum": 0,
+        "sourceIndex": 100,
+        "targetIndex": 102
+      },
+      "expected": {
+        "amount": 30000,
+        "pensum": 0,
+        "validPensum": false,
+        "fullAmount": null,
+        "sourceIndex": 100,
+        "targetIndex": 102,
+        "uprated": null,
+        "complete": false
+      },
+      "tags": [
+        "AHV",
+        "Hochrechnung"
+      ]
+    },
+    {
+      "id": "ROW-FULL-EQUAL",
+      "group": "income-row",
+      "operation": "calculateIncomeRow",
+      "input": {
+        "amount": 75000,
+        "kind": "full",
+        "pensum": null,
+        "sourceIndex": 110,
+        "targetIndex": 110
+      },
+      "expected": {
+        "amount": 75000,
+        "pensum": null,
+        "validPensum": true,
+        "fullAmount": 75000,
+        "sourceIndex": 110,
+        "targetIndex": 110,
+        "uprated": 75000,
+        "complete": true
+      },
+      "tags": [
+        "AHV",
+        "Hochrechnung"
+      ]
+    },
+    {
+      "id": "ROW-P25-IDX",
+      "group": "income-row",
+      "operation": "calculateIncomeRow",
+      "input": {
+        "amount": 18000,
+        "kind": "partial",
+        "pensum": 25,
+        "sourceIndex": 98,
+        "targetIndex": 104
+      },
+      "expected": {
+        "amount": 18000,
+        "pensum": 25,
+        "validPensum": true,
+        "fullAmount": 72000,
+        "sourceIndex": 98,
+        "targetIndex": 104,
+        "uprated": 76408.16326530612,
+        "complete": true
+      },
+      "tags": [
+        "AHV",
+        "Hochrechnung"
+      ]
+    },
+    {
+      "id": "WAGE-STANDARD",
+      "group": "wage",
+      "operation": "calculateWageResults",
+      "input": {
+        "hourly": 35,
+        "weeklyHours": 42
+      },
+      "expected": {
+        "standard": 76440,
+        "season": 0,
+        "day": 0,
+        "week": 0
+      },
+      "tags": [
+        "Lohnrechner"
+      ]
+    },
+    {
+      "id": "WAGE-SEASON",
+      "group": "wage",
+      "operation": "calculateWageResults",
+      "input": {
+        "seasonHourly": 42,
+        "annualHours": 1800
+      },
+      "expected": {
+        "standard": 0,
+        "season": 75600,
+        "day": 0,
+        "week": 0
+      },
+      "tags": [
+        "Lohnrechner"
+      ]
+    },
+    {
+      "id": "WAGE-DAY",
+      "group": "wage",
+      "operation": "calculateWageResults",
+      "input": {
+        "daily": 250,
+        "daysWeek": 5
+      },
+      "expected": {
+        "standard": 0,
+        "season": 0,
+        "day": 65000,
+        "week": 0
+      },
+      "tags": [
+        "Lohnrechner"
+      ]
+    },
+    {
+      "id": "WAGE-WEEK",
+      "group": "wage",
+      "operation": "calculateWageResults",
+      "input": {
+        "weekly": 1650
+      },
+      "expected": {
+        "standard": 0,
+        "season": 0,
+        "day": 0,
+        "week": 85800
+      },
+      "tags": [
+        "Lohnrechner"
+      ]
+    },
+    {
+      "id": "STAT-ANNUAL-BASE",
+      "group": "statistical-helper",
+      "operation": "calculateStatisticalAnnual",
+      "input": {
+        "monthly": 6000,
+        "hours": 41.7,
+        "baseIndex": 110,
+        "targetIndex": 112
+      },
+      "expected": {
+        "value": 76424.72727272728
+      },
+      "tags": [
+        "LSE"
+      ]
+    },
+    {
+      "id": "STAT-ANNUAL-EQUAL",
+      "group": "statistical-helper",
+      "operation": "calculateStatisticalAnnual",
+      "input": {
+        "monthly": 5000,
+        "hours": 40,
+        "baseIndex": 100,
+        "targetIndex": 100
+      },
+      "expected": {
+        "value": 60000
+      },
+      "tags": [
+        "LSE"
+      ]
+    },
+    {
+      "id": "LSE-YEAR-2023",
+      "group": "statistical-helper",
+      "operation": "effectiveLseYear",
+      "input": {
+        "year": 2023
+      },
+      "expected": {
+        "value": 2022
+      },
+      "tags": [
+        "LSE"
+      ]
+    },
+    {
+      "id": "LSE-YEAR-2024",
+      "group": "statistical-helper",
+      "operation": "effectiveLseYear",
+      "input": {
+        "year": 2024
+      },
+      "expected": {
+        "value": 2024
+      },
+      "tags": [
+        "LSE"
+      ]
+    },
+    {
+      "id": "BASE-TA01-2024-M-ALL-1",
+      "group": "statistical-base",
+      "operation": "calculateStatisticalBase",
+      "input": {
+        "mode": "TA01",
+        "year": 2024,
+        "gender": "Mann",
+        "branch": "05-96 Total",
+        "skill": "1"
+      },
+      "expected": {
+        "mode": "TA01",
+        "year": 2024,
+        "gender": "Mann",
+        "branch": "05-96 Total",
+        "skill": "1",
+        "monthly": 5421,
+        "hours": 41.7,
+        "baseIndex": 110.2,
+        "targetIndex": 110.2,
+        "annual": 67816.71
+      },
+      "tags": [
+        "BFS",
+        "LSE"
+      ]
+    },
+    {
+      "id": "BASE-TA01-2025-F-ALL-2",
+      "group": "statistical-base",
+      "operation": "calculateStatisticalBase",
+      "input": {
+        "mode": "TA01",
+        "year": 2025,
+        "gender": "Frau",
+        "branch": "05-96 Total",
+        "skill": "2"
+      },
+      "expected": {
+        "mode": "TA01",
+        "year": 2025,
+        "gender": "Frau",
+        "branch": "05-96 Total",
+        "skill": "2",
+        "monthly": 5290,
+        "hours": 41.7,
+        "baseIndex": 114.2,
+        "targetIndex": 116.8,
+        "annual": 67684.5772329247
+      },
+      "tags": [
+        "BFS",
+        "LSE"
+      ]
+    },
+    {
+      "id": "BASE-TA01-2023-M-BAU-1",
+      "group": "statistical-base",
+      "operation": "calculateStatisticalBase",
+      "input": {
+        "mode": "TA01",
+        "year": 2023,
+        "gender": "Mann",
+        "branch": "41-43 Baugewerbe",
+        "skill": "1"
+      },
+      "expected": {
+        "mode": "TA01",
+        "year": 2023,
+        "gender": "Mann",
+        "branch": "41-43 Baugewerbe",
+        "skill": "1",
+        "monthly": 5825,
+        "hours": 41.2,
+        "baseIndex": 106.2,
+        "targetIndex": 108.7,
+        "annual": 73691.84463276836
+      },
+      "tags": [
+        "BFS",
+        "LSE"
+      ]
+    },
+    {
+      "id": "BASE-T17-2024-M-FUEHRUNG",
+      "group": "statistical-base",
+      "operation": "calculateStatisticalBase",
+      "input": {
+        "mode": "T17",
+        "year": 2024,
+        "gender": "Mann",
+        "branch": "1 Führungskräfte",
+        "skill": "Alle"
+      },
+      "expected": {
+        "mode": "T17",
+        "year": 2024,
+        "gender": "Mann",
+        "branch": "1 Führungskräfte",
+        "skill": "Alle",
+        "monthly": 10787,
+        "hours": 41.7,
+        "baseIndex": 110.2,
+        "targetIndex": 110.2,
+        "annual": 134945.37000000002
+      },
+      "tags": [
+        "BFS",
+        "LSE"
+      ]
+    },
+    {
+      "id": "BASE-T17-2023-N-DIENST",
+      "group": "statistical-base",
+      "operation": "calculateStatisticalBase",
+      "input": {
+        "mode": "T17",
+        "year": 2023,
+        "gender": "Neutral",
+        "branch": "5 Dienstleistungsberufe und Verkäufer/innen",
+        "skill": "Alle"
+      },
+      "expected": {
+        "mode": "T17",
+        "year": 2023,
+        "gender": "Neutral",
+        "branch": "5 Dienstleistungsberufe und Verkäufer/innen",
+        "skill": "Alle",
+        "monthly": 4986,
+        "hours": 41.7,
+        "baseIndex": 108,
+        "targetIndex": 109.8,
+        "annual": 63414.441000000006
+      },
+      "tags": [
+        "BFS",
+        "LSE"
+      ]
+    },
+    {
+      "id": "BASE-TA11-2024-F-UNI-12",
+      "group": "statistical-base",
+      "operation": "calculateStatisticalBase",
+      "input": {
+        "mode": "TA11",
+        "year": 2024,
+        "gender": "Frau",
+        "branch": "Universitäre Hochschule (UNI, ETH)",
+        "skill": "1+2"
+      },
+      "expected": {
+        "mode": "TA11",
+        "year": 2024,
+        "gender": "Frau",
+        "branch": "Universitäre Hochschule (UNI, ETH)",
+        "skill": "1+2",
+        "monthly": 13422,
+        "hours": 41.7,
+        "baseIndex": 114.2,
+        "targetIndex": 114.2,
+        "annual": 167909.22000000003
+      },
+      "tags": [
+        "BFS",
+        "LSE"
+      ]
+    }
+  ],
+  "certification": {
+    "level": "locked-current-behaviour",
+    "statement": "Die Suite sperrt das im EKV Navigator 2.1 akzeptierte Verhalten. Die 78 synthetischen und datenbasierten Fälle sind nicht automatisch als einzeln fachlich manuell zertifiziert zu verstehen.",
+    "independentHumanCaseCertification": "pending"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "dataset": "BUA",
+  "source": {
+    "title": "BUA Testlieferung 2028",
+    "publisher": "Bundesamt für Statistik",
+    "publishedAt": "2028",
+    "sourceFile": "bua_2028_original.xlsx",
+    "sourceUrl": ""
+  },
+  "rows": [
+    { "branch": "49 Landverkehr und neue BFS Bezeichnung", "year": 2028, "hours": "41,3" },
+    { "branch": "05–96 Total", "year": 2028, "hours": "41,7" }
+  ]
+}

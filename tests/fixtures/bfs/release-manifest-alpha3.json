@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "bfs-test-2028",
+  "entries": [
+    { "dataset": "BUA", "input": "files/bua-wide.xlsx", "title": "BUA Testlieferung 2028" },
+    { "dataset": "NLI", "input": "files/nli-long.csv", "title": "NLI Testlieferung 2028" }
+  ]
+}

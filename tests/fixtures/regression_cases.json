@@ -1,0 +1,11 @@
+[
+  {"id":"IVE-2024-60","type":"invalidStat","annual":80000,"year":2024,"besitzstand":"Nein","restAf":0.60,"leidens":0,"expected":43200},
+  {"id":"IVE-2024-50","type":"invalidStat","annual":80000,"year":2024,"besitzstand":"Nein","restAf":0.50,"leidens":0,"expected":32000},
+  {"id":"IVE-2024-40","type":"invalidStat","annual":80000,"year":2024,"besitzstand":"Nein","restAf":0.40,"leidens":0,"expected":25600},
+  {"id":"IVE-2023-50","type":"invalidStat","annual":80000,"year":2023,"besitzstand":"Nein","restAf":0.50,"leidens":0,"expected":36000},
+  {"id":"IVE-Besitzstand","type":"invalidStat","annual":80000,"year":2025,"besitzstand":"Ja","restAf":0.50,"leidens":0.20,"expected":32000},
+  {"id":"VE-Parallelisierung","type":"validStat","annual":80000,"parallelIncome":70000,"expected":76000},
+  {"id":"EKV-50","type":"ekv","valid":80000,"invalid":40000,"expected":0.50},
+  {"id":"EKV-KeineEinbusse","type":"ekv","valid":70000,"invalid":75000,"expected":0},
+  {"id":"Gemischt-50-30","type":"mixed","employmentGrade":0.50,"employmentShare":0.60,"householdShare":0.40,"householdLimitation":0.30,"expected":0.42}
+]
