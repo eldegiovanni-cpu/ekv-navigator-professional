@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "description": "Explizite BFS Bezeichnungsvarianten. Rohbezeichnungen dürfen unverändert bleiben; die Zuordnung erfolgt auf kanonische NOGA Kategorien.",
+  "aliases": {
+    "52 Lagerei sowie Erbringung von sonstigen Dienstleistungen für den Verkehr": "52 Lagerei sowie Erbring. v. sonst. Dienstl. für den Verk.",
+    "05–96 Total": "05-96 Total",
+    "05–43 SEKTOR 2 PRODUKTION": "05-43 SEKTOR 2 PRODUKTION",
+    "45–96 SEKTOR 3 DIENSTLEISTUNGEN": "45-96  SEKTOR 3 DIENSTLEISTUNGEN",
+    "49 Landverkehr und Transport in rohrfernleitungen": "49 Landverkehr und Transport in Rohrfernleitungen",
+    "52 Landverkehr; Schifffahrt; Luftfahrt; Lagerei": "52 Lagerei sowie Erbring. v. sonst. Dienstl. für den Verk."
+  }
+}

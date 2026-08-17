@@ -1,0 +1,116 @@
+/* IT Anpassung 06.08.2026: Arbeitsstände ab 30 Tagen separat kontrollieren */
+.ekvp-header-actions {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+.workspace-age-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.24);
+  color: rgba(255,255,255,0.86);
+  backdrop-filter: blur(6px);
+}
+.workspace-age-indicator.has-items {
+  background: rgba(255,246,232,0.16);
+  border-color: rgba(255,221,166,0.56);
+  color: #fff4df;
+}
+.workspace-age-count {
+  display: grid;
+  place-items: center;
+  min-width: 25px;
+  height: 25px;
+  padding: 0 6px;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.20);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+.workspace-age-indicator.has-items .workspace-age-count {
+  background: rgba(255,210,132,0.22);
+  border-color: rgba(255,221,166,0.62);
+  color: #ffffff;
+}
+.workspace-age-copy {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+  font-size: 10px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.workspace-age-copy strong {
+  font-size: 10px;
+  font-weight: 700;
+  opacity: 0.9;
+}
+.workspace-age-copy span {
+  color: inherit;
+  opacity: 0.72;
+}
+.workspace-save-row {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) auto;
+  gap: 10px;
+  align-items: end;
+}
+.workspace-search-row {
+  margin-top: 16px;
+}
+.workspace-lists-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+.workspace-list-panel {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: rgba(247,251,254,0.97);
+}
+.workspace-list-panel-old {
+  border-top: 5px solid var(--warn);
+  background: linear-gradient(180deg, #ffffff 0%, #fff8ed 100%);
+}
+.workspace-list-panel-current {
+  border-top: 5px solid var(--ekvp-blue);
+}
+.workspace-list-panel .workspace-select {
+  min-width: 0;
+}
+.workspace-list-meta {
+  min-height: 31px;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+.workspace-list-panel-old .workspace-list-meta {
+  color: #7a4b0c;
+}
+@media (max-width: 900px) {
+  .workspace-save-row,
+  .workspace-lists-grid {
+    grid-template-columns: 1fr;
+  }
+  .ekvp-header-actions { align-items: stretch; }
+  .workspace-age-indicator {
+    width: 100%;
+  }
+  .workspace-age-copy {
+    white-space: normal;
+  }
+}
+@media print {
+  .workspace-age-indicator { display: none !important; }
+}
